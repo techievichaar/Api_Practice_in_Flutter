@@ -27,7 +27,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
       } else {
         print('Failed !');
       }
-      print('object');
     } catch (e) {
       print(e.toString());
     }
