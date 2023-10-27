@@ -1,4 +1,4 @@
-import 'package:api_practice/example/sign_up.dart';
+import 'package:api_practice/example/uploadimage_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const SignUpScreen(),
+      home: const UploadImageScreen(),
     );
   }
 }
