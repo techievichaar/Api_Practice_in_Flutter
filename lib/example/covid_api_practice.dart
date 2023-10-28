@@ -147,8 +147,9 @@ class _CovidApiPracticeState extends State<CovidApiPractice> {
 }
 
 class ReusableRow extends StatelessWidget {
-  String title, value;
-  ReusableRow({super.key, required this.title, required this.value});
+  final String title;
+  final String value;
+  const ReusableRow({super.key, required this.title, required this.value});
 
   @override
   Widget build(BuildContext context) {
