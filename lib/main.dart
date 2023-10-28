@@ -1,4 +1,4 @@
-import 'package:api_practice/example/uploadimage_screen.dart';
+import 'package:api_practice/example/covid_api_practice.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'API Practice',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
+      theme: ThemeData.dark(
         useMaterial3: true,
       ),
-      home: const UploadImageScreen(),
+      home: const CovidApiPractice(),
     );
   }
 }

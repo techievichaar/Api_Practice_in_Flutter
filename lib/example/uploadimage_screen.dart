@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print, unnecessary_new, avoid_unnecessary_containers
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -103,7 +105,7 @@ class _UploadImageScreenState extends State<UploadImageScreen> {
                   color: Colors.blue,
                   height: 50,
                   width: 100,
-                  child: Center(child: const Text('Upload Image')),
+                  child: const Center(child: Text('Upload Image')),
                 )),
           ],
         ),
