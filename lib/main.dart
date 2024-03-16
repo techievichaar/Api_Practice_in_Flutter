@@ -1,4 +1,4 @@
-import 'package:api_practice/example/covid_api_practice.dart';
+import 'package:api_practice/UI/promo_ui.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,12 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'API Practice',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(
-        useMaterial3: true,
-      ),
-      home: const CovidApiPractice(),
-    );
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData.dark(
+          useMaterial3: true,
+        ),
+        home: const PromoUIPage());
   }
 }

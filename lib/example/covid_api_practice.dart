@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'dart:convert';
 
 import 'package:api_practice/example/countries_list.dart';
@@ -6,7 +8,7 @@ import 'package:http/http.dart' as http;
 import 'package:pie_chart/pie_chart.dart';
 
 class CovidApiPractice extends StatefulWidget {
-  const CovidApiPractice({super.key});
+  const CovidApiPractice({Key? key});
 
   @override
   State<CovidApiPractice> createState() => _CovidApiPracticeState();
@@ -84,31 +86,31 @@ class _CovidApiPracticeState extends State<CovidApiPractice> {
                               children: [
                                 ReusableRow(
                                   title: 'Total :',
-                                  value: data['updated'].toString(),
+                                  value: data['updated'],
                                 ),
                                 ReusableRow(
                                   title: 'Deaths :',
-                                  value: data['deaths'].toString(),
+                                  value: data['deaths'],
                                 ),
                                 ReusableRow(
                                   title: 'Recovered :',
-                                  value: data['recovered'].toString(),
+                                  value: data['recovered'],
                                 ),
                                 ReusableRow(
                                   title: 'Active :',
-                                  value: data['active'].toString(),
+                                  value: data['active'],
                                 ),
                                 ReusableRow(
                                   title: 'Critical :',
-                                  value: data['critical'].toString(),
+                                  value: data['critical'],
                                 ),
                                 ReusableRow(
                                   title: 'Today Deaths :',
-                                  value: data['todayDeaths'].toString(),
+                                  value: data['todayDeaths'],
                                 ),
                                 ReusableRow(
-                                  title: 'Todday Recovered :',
-                                  value: data['todayRecovered'].toString(),
+                                  title: 'Today Recovered :',
+                                  value: data['todayRecovered'],
                                 ),
                               ],
                             ),
@@ -148,8 +150,8 @@ class _CovidApiPracticeState extends State<CovidApiPractice> {
 
 class ReusableRow extends StatelessWidget {
   final String title;
-  final String value;
-  const ReusableRow({super.key, required this.title, required this.value});
+  final int value;
+  const ReusableRow({Key? key, required this.title, required this.value});
 
   @override
   Widget build(BuildContext context) {
@@ -165,7 +167,7 @@ class ReusableRow extends StatelessWidget {
                 style:
                     const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
-              Text(value),
+              Text(value.toString()),
             ],
           ),
           const SizedBox(

@@ -2,7 +2,7 @@
 
 import 'dart:convert';
 
-import 'package:api_practice/secrets.dart';
+import 'package:api_practice/model/secrets.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
