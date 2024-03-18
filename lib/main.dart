@@ -15,6 +15,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData.dark(
           useMaterial3: true,
         ),
-        home: const PromoUIPage());
+        home: HomePage());
   }
 }
